@@ -24,6 +24,9 @@
     "docs": "rm -rf docs && react-scripts build && mv build docs",
     "push-docs": "npm run docs && git add docs/* && git commit -m \"Update docs\" && git push"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
